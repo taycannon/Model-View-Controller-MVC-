@@ -1,8 +1,8 @@
 //Index
 
-const user = require('./user');
-const post = require('./posts');
-const comment = require('./comments');
+const User = require('./user');
+const Post = require('./posts');
+const Comment = require('./comments');
 
 User.hasMany(post, {
   foreignKey: 'user_id',
@@ -21,4 +21,4 @@ Comment.belongsTo(Post, {
     foreignKey: 'post_id',
 })
 
-module.exports = { User, Posts, Comment };
+module.exports = { User, Post, Comment };
