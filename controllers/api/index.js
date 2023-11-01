@@ -1,10 +1,10 @@
-//API index
+// API index
 
 const router = require('express').Router();
 const userRoutes = require('./userRoutes');
-const postsRoutes = require('./userRoutes');
+const postRoutes = require('./postsRoutes'); 
 
 router.use('/user', userRoutes);
-router.use('/posts', postsRoutes);
+router.use('/posts', postRoutes); 
 
 module.exports = router;
