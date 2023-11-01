@@ -23,7 +23,7 @@ comment.init(
       blog_id: {
         type: DataTypes.INTEGER,
         references: {
-          model: 'blog',
+          model: 'post',
           key: 'id',
         },
       },
@@ -43,4 +43,4 @@ comment.init(
       modelName: 'comment',
     }
   );
-  module.exports = comment;
+  module.exports = Comment;
