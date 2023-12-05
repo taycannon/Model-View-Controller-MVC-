@@ -22,7 +22,7 @@ npm i express-handlebars@5.2.0
 ## Usage
 Link to Github Repo
 
-Herkou live link: 
+Heroku live link: 
 
 ## Credits
 Taylor Cannon (me)
