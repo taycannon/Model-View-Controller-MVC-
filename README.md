@@ -1,7 +1,7 @@
 # Model-View-Controller-MVC-
 
 ## Description
-
+MVC Tech Blog is a dynamic web application designed for tech enthusiasts to share their insights, experiences, and expertise through blog posts. You can create, delete or edit you blog post(s) that you made either today, yesterday, tomorrow, or 5 years ago & the future of course!
 
 ## Table of Contents
 N/A
@@ -20,8 +20,9 @@ npm i mysql2@2.2.5
 npm i express-handlebars@5.2.0
 
 ## Usage
+Link to Github Repo
 
-Video link of project: 
+Herkou live link: 
 
 ## Credits
 Taylor Cannon (me)
