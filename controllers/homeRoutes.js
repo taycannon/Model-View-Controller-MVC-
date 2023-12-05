@@ -29,6 +29,7 @@ router.get('/', async (req, res) => {
 // Single post route
 router.get('/posts/:id', auth, async (req, res) => {
   try {
+    // If the middleware passes, the user is authenticated
     const dbPostData = await Posts.findByPk(req.params.id, {
       include: [
         {
@@ -37,10 +38,12 @@ router.get('/posts/:id', auth, async (req, res) => {
         },
       ],
     });
+
     if (!dbPostData) {
       res.status(404).render('error-view', { message: 'Post not found' });
       return;
     }
+
     const post = dbPostData.get({ plain: true });
     res.render('post', { post, loggedIn: req.session.loggedIn });
   } catch (err) {
