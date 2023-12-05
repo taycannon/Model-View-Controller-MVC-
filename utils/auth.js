@@ -1,10 +1,10 @@
-//Auth
-const auth = (req, res, next) => {
-    if (!req.session.logged_in) {
-      res.redirect('/login');
+//middleware to verify user loggied in before restricted route access given
+const withAuth = (req, res, next) => {
+    if (!req.session.userId) {
+        res.redirect("/login");
     } else {
-      next();
+        next();
     }
-  };
-  
-  module.exports = auth;
+};
+
+module.exports = withAuth;
