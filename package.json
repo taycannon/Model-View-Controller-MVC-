@@ -1,4 +1,12 @@
 {
+  "name": "model-view-controller-mvc-",
+  "version": "1.0.0",
+  "description": "MVC Tech Blog is a dynamic web application designed for tech enthusiasts to share their insights, experiences, and expertise through blog posts. You can create, delete or edit your blog post(s) that you made either today, yesterday, tomorrow, or 5 years ago & the future of course!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
+  },
   "dependencies": {
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
@@ -9,14 +17,6 @@
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
   },
-  "scripts": {
-    "start": "node server.js",
-    "seed": "node seeds/seed.js"
-  },
-  "name": "model-view-controller-mvc-",
-  "description": "## Description MVC Tech Blog is a dynamic web application designed for tech enthusiasts to share their insights, experiences, and expertise through blog posts. You can create, delete or edit you blog post(s) that you made either today, yesterday, tomorrow, or 5 years ago & the future of course!",
-  "version": "1.0.0",
-  "main": "server.js",
   "devDependencies": {},
   "keywords": [],
   "author": "",
