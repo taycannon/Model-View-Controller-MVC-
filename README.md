@@ -20,7 +20,7 @@ npm i mysql2@2.2.5
 npm i express-handlebars@5.2.0
 
 ## Usage
-Link to Github Repo
+Link to Github Repo:
 
 Heroku live link: 
 
